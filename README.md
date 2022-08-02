@@ -21,3 +21,29 @@ The statistics for the test dataset is shown below:
 
 <img width="226" alt="Screen Shot 2022-08-01 at 9 15 37 PM" src="https://user-images.githubusercontent.com/37752863/182271073-46a4c073-bb18-4bcb-9e86-6b89785fa765.png">
 <img width="388" alt="Screen Shot 2022-08-01 at 9 23 11 PM" src="https://user-images.githubusercontent.com/37752863/182271793-43b8682e-42e3-49c6-8af1-ae0be5bdf7c7.png">
+
+## Normalization and Data Cleaning
+For both data we needed to do certain data cleaning and had to convert qualitative data into a quantitative data so that it can be passed to MLP (Multi-Layered Perceptron) network model which can accurately predict our data. 
+
+For housing dataset we did the following ammendments in the data:
+* Remove all the housing prices that were less than $100k as it doesn't make sense since the housing prices are so inflated in Canada.
+* Removed "S.No" and "Address" fields as that is unnecesssary.
+* "AreaName" is qualitative so, had to serialize all the unique area name into numbers. Turns out there are 1,120 different area names in the dataset and has been serialized from {0, 1, 2... 1120}.
+
+The following dataset is shown below:
+<img width="427" alt="Screen Shot 2022-08-01 at 9 34 58 PM" src="https://user-images.githubusercontent.com/37752863/182272894-8b3b4f8b-dd97-4c33-ae74-5a7df81a25a7.png">
+
+For loan dataset, we did the following changes:
+* We removed all the blank entries in a field (this significantly reduced the dataset for both test and train).
+* We serialized all the qualitative data into quantitiative numbers for our network model.
+* Since this was based on personal loans, we had to multiply the "LoanAmount" by 10, so it can be treated as a mortgage.
+
+Final Train Dataset is shown below:
+
+<img width="567" alt="Screen Shot 2022-08-01 at 9 39 07 PM" src="https://user-images.githubusercontent.com/37752863/182273324-6ee20141-7fa8-4a3b-bbf3-8085587c8788.png">
+
+Final Test Dataset is shown below:
+
+<img width="565" alt="Screen Shot 2022-08-01 at 9 39 55 PM" src="https://user-images.githubusercontent.com/37752863/182273389-282385a1-dcc6-4ffd-b57a-076d5a518248.png">
+
+## MLP Network
