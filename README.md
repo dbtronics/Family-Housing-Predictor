@@ -48,4 +48,20 @@ Final Test Dataset is shown below:
 
 <img width="565" alt="Screen Shot 2022-08-01 at 9 39 55 PM" src="https://user-images.githubusercontent.com/37752863/182273389-282385a1-dcc6-4ffd-b57a-076d5a518248.png">
 
-## MLP Network
+## MLP Network and Perimeter Tuning
+For this dataset we're using 4 layer neural network architecture with 64 and 32 hidden neurons respectively with relu activation and adams gradient descent for better convergence. We make a model for both housing and loan dataset. We used housing model to predict the price and then use the mortgage value in loan prediction to see whether the family is approved for the loan or not.
+
+The perimeters to test out the network is given below:
+
+<img width="660" alt="Screen Shot 2022-08-01 at 10 22 13 PM" src="https://user-images.githubusercontent.com/37752863/182278021-50464744-2fec-4285-b16c-3fb56214b390.png">
+
+The results for housing price and loan prediction are given below:
+
+`Price Range: 400,000 – 500,000 --> $490,916.88`
+
+```House Price: $490,916.88
+Down Payment: $98,183.38
+Mortgage Needed: $392,733.51
+
+Loan Approval: N
+```
