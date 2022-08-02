@@ -48,7 +48,7 @@ Final Test Dataset is shown below:
 
 <img width="565" alt="Screen Shot 2022-08-01 at 9 39 55 PM" src="https://user-images.githubusercontent.com/37752863/182273389-282385a1-dcc6-4ffd-b57a-076d5a518248.png">
 
-## MLP Network and Perimeter Tuning
+## MLP Network and Parameter Tuning
 For this dataset we're using 4 layer neural network architecture with 64 and 32 hidden neurons respectively with relu activation and adams gradient descent for better convergence. We make a model for both housing and loan dataset. We used housing model to predict the price and then use the mortgage value in loan prediction to see whether the family is approved for the loan or not.
 
 The perimeters to test out the network is given below:
