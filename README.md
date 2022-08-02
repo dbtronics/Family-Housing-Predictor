@@ -32,6 +32,7 @@ For housing dataset we did the following ammendments in the data:
 * "AreaName" is qualitative so, had to serialize all the unique area name into numbers. Turns out there are 1,120 different area names in the dataset and has been serialized from {0, 1, 2... 1120}.
 
 The following dataset is shown below:
+
 <img width="427" alt="Screen Shot 2022-08-01 at 9 34 58 PM" src="https://user-images.githubusercontent.com/37752863/182272894-8b3b4f8b-dd97-4c33-ae74-5a7df81a25a7.png">
 
 For loan dataset, we did the following changes:
