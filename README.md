@@ -8,6 +8,7 @@ This is used as a proof-of-concept idea where this model acts as a one-stop-shop
 ### Ontario House Prices
 Ontario data has been extracted from Kaggle source which can be viewed [HERE](https://www.kaggle.com/code/thiagoribeiro/house-sales-in-ontario-data-analysis/data). The statistics for the data is shown as below:
 <img width="262" alt="Screen Shot 2022-08-01 at 8 55 40 PM" src="https://user-images.githubusercontent.com/37752863/182269506-7722415f-3cca-49a8-95f5-d129d2595ee5.png">
+
 This data source has 25K data with minimum price of $0 (anomaly) and maximum price of $32.5M. This data is based on July 2016 housing prices.
 
 ### Loan Prediction
